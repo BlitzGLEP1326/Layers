@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MapWindowClass</class>
+ <widget class="QWidget" name="MapWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Окно карты</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QGraphicsView" name="graphicsView">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="renderHints">
+        <set>QPainter::Antialiasing|QPainter::TextAntialiasing</set>
+       </property>
+       <property name="dragMode">
+        <enum>QGraphicsView::NoDrag</enum>
+       </property>
+       <property name="cacheMode">
+        <set>QGraphicsView::CacheNone</set>
+       </property>
+       <property name="viewportUpdateMode">
+        <enum>QGraphicsView::FullViewportUpdate</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <action name="actionOpenDataList">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="iconText">
+    <string>Список карт</string>
+   </property>
+  </action>
+  <action name="actionCloseDataList">
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </action>
+  <action name="actionOpenProperty">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="iconText">
+    <string>Свойства</string>
+   </property>
+  </action>
+  <action name="actionCloseProperty">
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </action>
+  <action name="actionOpenObjectList">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="iconText">
+    <string>Список объектов</string>
+   </property>
+  </action>
+  <action name="actionCloseObjectList">
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </action>
+  <action name="actionOpenScaleWidget">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="iconText">
+    <string>Масштаб</string>
+   </property>
+  </action>
+  <action name="actionCloseScaleWidget">
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

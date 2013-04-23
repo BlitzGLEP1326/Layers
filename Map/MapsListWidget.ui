@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataListClass</class>
+ <widget class="QWidget" name="DataListClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>278</width>
+    <height>274</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Список карт</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="horizontalSpacing">
+    <number>0</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>10</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>260</width>
+       <height>221</height>
+      </size>
+     </property>
+     <property name="columnCount">
+      <number>1</number>
+     </property>
+     <attribute name="headerVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="headerCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="headerCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="headerVisible">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Имя</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>Векторные карты</string>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Матричные карты</string>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Растровые карты</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout" columnstretch="0,0,0,0,0" columnminimumwidth="0,0,0,0,0">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="showPushButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Показать</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="addPushButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Добавить</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="deletePushButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Удалить</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>5</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="3">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>5</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="MapWindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

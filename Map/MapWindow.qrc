@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>zoomin.png</file>
+        <file>zoomout.png</file>
+        <file>check.png</file>
+        <file>eye.png</file>
+        <file>flag_16.png</file>
+        <file>map_pin_24.png</file>
+        <file>passager-icon_16.png</file>
+        <file>minus.png</file>
+        <file>plus.png</file>
+    </qresource>
+</RCC>
